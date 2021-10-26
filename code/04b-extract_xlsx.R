@@ -1,5 +1,5 @@
-library(readxl)
-path_to_file <- "../data/ejemplos_lectura.xlsx"
+library(readxl) #tambien existe xlconnet
+path_to_file <- "../rstudio/ETL/data/ejemplos_lectura.xlsx"
 df_ejemplos <- read_xlsx(path_to_file)
 df_ejemplos
 
@@ -10,6 +10,9 @@ excel_sheets(path_to_file)
 df_ejemplos <- read_xlsx(path_to_file, sheet = "Fechas")
 df_ejemplos
 
+
+rep("skip",3)
+rep("guess",5)
 # Para leer regiones
 df_fechas <- read_xlsx(path_to_file, 
                        sheet = "Fechas", 
